@@ -1,0 +1,9 @@
+004_CALC Security on SOC Display,SOC-VAR1,2101,5,0,100,%,7E2
+004_CALC SOC Display minus Security,SOC-VAR2,2101,val{000_State of Charge Display}-val{004_CALC Security on SOC Display},0,100,%,7E2
+004_CALC SOC Display Minus Security Divided 100,SOC-VAR3,2101,val{004_CALC SOC Display minus Security}/100,0,1,,7E2
+
+004_CALC MAXDET on 100,SOH1,2101,100-val{000_Maximum Deterioration},0,100,%,7E2
+004_CALC SOH Battery,SOH2,2101,27*val{004_CALC MAXDET on 100}/100,0,27,kWh,7E2
+
+004_CALC Instant Remaining Kilometers,MAX Kilometers,2101,val{003_VMCU Instant Driving Efficiency2}*val{004_CALC SOH Battery}*val{004_CALC SOC Display Minus Security Divided 100},0,256,km,7E2
+004_CALC Instant Remaining Minutes,MAX Minutes,2101,val{004_CALC SOH Battery}*val{004_CALC SOC Display Minus Security Divided 100}/val{003_VMCU Instant Driving Efficiency}*60,0,240,min,7E2
