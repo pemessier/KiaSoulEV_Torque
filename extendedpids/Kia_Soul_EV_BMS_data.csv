@@ -9,8 +9,8 @@ Name,ShortName,ModeAndPID,Equation,Min Value,Max Value,Units,Header
 000_Cumulative Energy Charged,CEC,2101,((am<24)+(an<16)+(ao<8)+ap)/10,0,1000000,kWh,7E4
 000_Cumulative Energy Discharged,CED,2101,((aq<24)+(ar<16)+(as<8)+at)/10,0,1000000,kWh,7E4
 000_Operating Time,OpTime,2101,((au<24)+(av<16)+(aw<8)+ax)/3600,0,1000000,hours,7E4
-000_Battery Min Temperature,Batt MinT,2101,Signed(O),-40,120,C,7E4
-000_Battery Max Temperature,Batt MaxT,2101,Signed(P),-40,120,C,7E4
+000_Battery Max Temperature,Batt MaxT,2101,Signed(O),-40,120,C,7E4
+000_Battery Min Temperature,Batt MinT,2101,Signed(P),-40,120,C,7E4
 000_Battery Module 1 Temperature,Batt Temp1,2101,Signed(Q),-40,120,C,7E4
 000_Battery Module 2 Temperature,Batt Temp2,2101,Signed(R),-40,120,C,7E4
 000_Battery Module 3 Temperature,Batt Temp3,2101,Signed(S),-40,120,C,7E4
